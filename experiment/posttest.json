@@ -2,7 +2,7 @@
     "version": 2.0,
     "questions": [
       {
-        "question":"For below resistance find out the resistance and tolerance value.<br/><p style=\"text-align:center\"><img src=\"images/r1.png\"></p>" ,
+        "question":"For below resistance find out the resistance and tolerance value. <br> <p style='text-align:center'><img src='./images/r1.png'></p>",
         "answers": {
           "a": "47 Kohm, 5",
           "b": "4 Kohm, 7",
