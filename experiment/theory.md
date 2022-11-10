@@ -127,7 +127,7 @@ The last band denotes the tolerance . So the value of the 4 band resistor it is 
 
 Color | Digit | Multiplier | Tolerence%  | Color Band | 
 :--|:--|:--|:--|:--|
-Black | 0 |  $$10^0 \quad\ohm$$ | | <input type="text" style="background-color:black" > | 
+Black | 0 |  $$10^0\quad\ohm$$ | | <input type="text" style="background-color:black" > | 
 Brown | 0 |  $$10^1 \quad\ohm$$ | 1 | <input type="text" style="background-color:brown" > | 
 Red | 0 |  $$10^1 \quad\ohm$$ | 2 | <input type="text" style="background-color:red" > | 
 Orange | 0 |  $$10^3 \quad \ohm \quad (1K\ohm)$$ | | <input type="text" style="background-color:orange" > | 
