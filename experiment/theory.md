@@ -127,16 +127,16 @@ The last band denotes the tolerance . So the value of the 4 band resistor it is 
 
 Color | Digit | Multiplier | Tolerence%  | Color Band | 
 :--|:--|:--|:--|:--|
-Black | 0 |  \\(  10^0 Ω \\) | | <input type="text" style="background-color:black" > | 
-Brown | 1 |  $$10^1Ω$$ | 1 | <input type="text" style="background-color:brown" > | 
-Red | 2 |  $$10^1 Ω$$ | 2 | <input type="text" style="background-color:red" > | 
-Orange | 3 |  $$10^3 Ω (1kΩ)$$ | | <input type="text" style="background-color:orange" > | 
-Yellow | 4 |  $$10^4 Ω (10kΩ)$$ | | <input type="text" style="background-color:yellow" > | 
-Green | 5 |  $$10^5 \quad Ω \quad (100kΩ)$$ | 0.5 | <input type="text" style="background-color:limegreen" > | 
-Blue | 6 |  $$10^6 \quad Ω \quad (1MΩ)$$ | 0.25 | <input type="text" style="background-color:blue" > | 
-Violet | 7 |  $$10^7 \quad Ω \quad (10MΩ)$$ | 0.1 | <input type="text" style="background-color:blueviolet" > | 
-Grey | 8 |  $$10^8 \quad Ω \quad (100MΩ)$$ | 0.05 | <input type="text" style="background-color:grey" > | 
-White | 9 |  $$10^9 \quad Ω \quad (1GΩ)$$ | | <input type="text" style="background-color:whitesmoke" > | 
+Black | 0 |  $$  10^0 \quad Ω $$ | | <input type="text" style="background-color:black" > | 
+Brown | 1 |  $$10^1\quad Ω$$ | 1 | <input type="text" style="background-color:brown" > | 
+Red | 2 |  $$10^1 \quad Ω$$ | 2 | <input type="text" style="background-color:red" > | 
+Orange | 3 |  $$10^3 \quad Ω \quad (1\quad kΩ)$$ | | <input type="text" style="background-color:orange" > | 
+Yellow | 4 |  $$10^4 \quad Ω \quad (10\quad kΩ)$$ | | <input type="text" style="background-color:yellow" > | 
+Green | 5 |  $$10^5 \quad Ω \quad (100\quad kΩ)$$ | 0.5 | <input type="text" style="background-color:limegreen" > | 
+Blue | 6 |  $$10^6 \quad Ω \quad (1\quad MΩ)$$ | 0.25 | <input type="text" style="background-color:blue" > | 
+Violet | 7 |  $$10^7 \quad Ω \quad (10\quad MΩ)$$ | 0.1 | <input type="text" style="background-color:blueviolet" > | 
+Grey | 8 |  $$10^8 \quad Ω \quad (100\quad MΩ)$$ | 0.05 | <input type="text" style="background-color:grey" > | 
+White | 9 |  $$10^9 \quad Ω \quad (1\quad GΩ)$$ | | <input type="text" style="background-color:whitesmoke" > | 
 Gold | 0 |  $$10^{-1} \quad Ω$$ | 5 | <input type="text" style="background-color:gold" > | 
 Silver | 0 |  $$10^{-2} \quad Ω$$ | 10 | <input type="text" style="background-color:silver" > | 
 None | 0 |   | 20 | <input type="text" style="background-color:none" > | 
