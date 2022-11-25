@@ -18,40 +18,48 @@ function resfn(){
     
     if(x==""){
        document.getElementById("res-msg").innerHTML = "Enter The Resistance "; 
+       document.getElementById("res-msg").style.color="blue";
      //  document.writeln("<p>Enter The Resistance :</p>");
     }else if(x=="47"){
-       document.getElementById("res-msg").innerHTML = "Correct Resistance  Value"; 
+       document.getElementById("res-msg").innerHTML = "Correct Resistance  Value";
+       document.getElementById("res-msg").style.color="green"; 
       //document.writeln("<p>Correct Resistance  Value</p>");
     }
     else if (x!= "47") {
        document.getElementById("res-msg").innerHTML ="Incorrect resistance value";
+       document.getElementById("res-msg").style.color="red";
         //document.writeln("<p>Incorrect resistance value</p>");
     }
      if (w == 0)
     {
         document.getElementById("res-msgg").innerHTML ="Please select a unit ";
-        //document.writeln("<p>Please select a unit:</p>");
+       document.getElementById("res-msgg").style.color="blue";
     }
     else if (w == "2" ) {
         document.getElementById("res-msgg").innerHTML ="Correct  Unit Value";
-        //document.writeln("<p>Correct  Unit Value</p>");
+       
+        document.getElementById("res-msgg").style.color="green";
     }
     else if (w != "2") {
          document.getElementById("res-msgg").innerHTML ="Incorrect Unit";
-          //document.writeln("<p>Incorrect Unit</p>");
+         document.getElementById("res-msgg").style.color="red";
+          
     }
 
    if (z == "") {
 
         document.getElementById("res-msggg").innerHTML = "Enter the tolerance "; 
+        document.getElementById("res-msggg").style.color="blue";
         //document.writeln("<p>Enter the tolerance :</p>");
     }
     else if (z == "5") {
         document.getElementById("res-msggg").innerHTML = "Correct Tolerance Value";
+        document.getElementById("res-msggg").style.color="green";
        // document.writeln("<p>Correct Tolerance Value</p>");
     }
     else if (z != "5") {
         document.getElementById("res-msggg").innerHTML = "Incorrect Tolerance value";
+        document.getElementById("res-msggg").style.color="red";
         //document.writeln("<p>Incorrect Tolerance value</p>");
     }
 }
@@ -67,40 +75,49 @@ function resfnn(){
     
     if(x==""){
       document.getElementById("res-msg2").innerHTML = "Enter The Resistance "; 
+      document.getElementById("res-msg2").style.color="blue";
        // document.writeln("Enter The Resistance :");
     }else if(x=="5.2"){
       document.getElementById("res-msg2").innerHTML = "Correct Resistance Value"; 
+      document.getElementById("res-msg2").style.color="green";
       // document.writeln("Correct Resistance Value");
     }
     else if (x!= "5.2") {
         document.getElementById("res-msg2").innerHTML ="Incorrect resistance value";
+        document.getElementById("res-msg2").style.color="red";
        // document.writeln("Incorrect resistance value");
     }
      if (w == 0)
     {
         document.getElementById("res-msgg2").innerHTML ="Please select a unit ";
+        document.getElementById("res-msgg2").style.color="blue";
         //document.writeln("Please select a unit:");
     }
     else if (w == "1") {
        document.getElementById("res-msgg2").innerHTML ="Correct Unit";
+       document.getElementById("res-msgg2").style.color="green";
         // document.writeln("Correct Unit Value");
     }
     else if (w != "1") {
          document.getElementById("res-msgg2").innerHTML ="Incorrect Unit";
+         document.getElementById("res-msgg2").style.color="red";
          // document.writeln("Incorrect Unit");
     }
 
    if (z == "") {
 
         document.getElementById("res-msggg2").innerHTML = "Enter the tolerance "; 
+        document.getElementById("res-msggg2").style.color="blue";
         //document.writeln("Enter the tolerance :");
     }
     else if (z == "10") {
         document.getElementById("res-msggg2").innerHTML = "Correct Tolerance Value";
+        document.getElementById("res-msggg2").style.color="green";
        // document.writeln("Correct Tolerance Value");
     }
     else if (z != "10") {
        document.getElementById("res-msggg2").innerHTML = "Incorrect Tolerance value";
+       document.getElementById("res-msggg2").style.color="red";
        //  document.writeln("Incorrect Tolerance value");
     }
 }
@@ -116,40 +133,49 @@ function resfun(){
     
     if(x==""){
        document.getElementById("res-msg3").innerHTML = "Enter The Resistance "; 
+       document.getElementById("res-msg3").style.color="blue";
       // document.writeln("Enter The Resistance :");
     }else if(x=="97"){
       document.getElementById("res-msg3").innerHTML = "Correct Resistance Value"; 
+      document.getElementById("res-msg3").style.color="green";
       // document.writeln("Correct Resistance Value");
     }
     else if (x!= "97") {
        document.getElementById("res-msg3").innerHTML ="Incorrect resistance value";
+       document.getElementById("res-msg3").style.color="red";
          //document.writeln("Incorrect resistance value");
     }
      if (w == 0)
     {
         document.getElementById("res-msgg3").innerHTML ="Please select a unit ";
+        document.getElementById("res-msgg3").style.color="blue";
         //document.writeln("Please select a unit");
     }
     else if (w == "1") {
         document.getElementById("res-msgg3").innerHTML ="Correct Unit";
+        document.getElementById("res-msgg3").style.color="green";
         //document.writeln("Correct  Unit Value");
     }
     else if (w != "1") {
          document.getElementById("res-msgg3").innerHTML ="Incorrect Unit";
+         document.getElementById("res-msgg3").style.color="red";
          // document.writeln("Incorrect Unit");
     }
 
    if (z == "") {
 
         document.getElementById("res-msggg3").innerHTML = "Enter the tolerance "; 
+        document.getElementById("res-msggg3").style.color="blue";
         //document.writeln("Enter the tolerance :");
     }
     else if (z == "20") {
        document.getElementById("res-msggg3").innerHTML = "Correct  Tolerance Value";
+       document.getElementById("res-msggg3").style.color="green";
         // document.writeln("Correct  Tolerance Value");
     }
     else if (z != "20") {
         document.getElementById("res-msggg3").innerHTML = "Incorrect Tolerance value";
+        document.getElementById("res-msggg3").style.color="red";
        // document.writeln("Incorrect Tolerance value");
     }
 }
@@ -164,40 +190,49 @@ function resfunc(){
     
     if(x==""){
        document.getElementById("res-msg4").innerHTML = "Enter The Resistance "; 
+       document.getElementById("res-msg4").style.color="blue";
       // document.writeln("Enter The Resistance :");
     }else if(x=="3.3"){
        document.getElementById("res-msg4").innerHTML = "Correct Resistance Value"; 
+       document.getElementById("res-msg4").style.color="green";
      // document.writeln("Correct Resistance Value");
     }
     else if (x!= "3.3") {
         document.getElementById("res-msg4").innerHTML ="Incorrect resistance value";
+        document.getElementById("res-msg4").style.color="red";
         //document.writeln("Incorrect resistance value");
     }
      if (w == 0)
     {
         document.getElementById("res-msgg4").innerHTML ="Please select a unit ";
+        document.getElementById("res-msgg4").style.color="blue";
        // document.writeln("Please select a unit");
     }
     else if (w == "2") {
         document.getElementById("res-msgg4").innerHTML ="Correct Unit";
+        document.getElementById("res-msgg4").style.color="green";
        // document.writeln("Correct Unit Value");
     }
     else if (w != "2") {
          document.getElementById("res-msgg4").innerHTML ="Incorrect Unit";
+         document.getElementById("res-msgg4").style.color="red";
          // document.writeln("Incorrect Unit");
     }
 
    if (z == "") {
 
         document.getElementById("res-msggg4").innerHTML = "Enter the tolerance "; 
+        document.getElementById("res-msggg4").style.color="blue";
         //document.writeln("Enter the tolerance :");
     }
     else if (z == "0.1") {
         document.getElementById("res-msggg4").innerHTML = "Correct Tolerance Value";
+        document.getElementById("res-msggg4").style.color="green";
        // document.writeln("Correct Tolerance Value");
     }
     else if (z != "0.1") {
         document.getElementById("res-msggg4").innerHTML = "Incorrect Tolerance value";
+        document.getElementById("res-msggg4").style.color="red";
         //document.writeln("Incorrect Tolerance value");
     }
 }
@@ -212,40 +247,49 @@ function resfunct(){
     
     if(x==""){
        document.getElementById("res-msg5").innerHTML = "Enter The Resistance "; 
+       document.getElementById("res-msg5").style.color="blue";
        //document.writeln("Enter The Resistance :");
     }else if(x=="1.58"){
        document.getElementById("res-msg5").innerHTML = "Correct Resistance Value"; 
+       document.getElementById("res-msg5").style.color="green";
       //document.writeln("Correct Resistance Value");
     }
     else if (x!= "1.58") {
         document.getElementById("res-msg5").innerHTML ="Incorrect resistance value";
+        document.getElementById("res-msg5").style.color="red";
         //document.writeln("Incorrect resistance value");
     }
      if (w == 0)
     {
         document.getElementById("res-msgg5").innerHTML ="Please select a unit ";
+        document.getElementById("res-msgg5").style.color="blue";
         //document.writeln("Please select a unit");
     }
     else if (w == "1") {
         document.getElementById("res-msgg5").innerHTML ="Correct Unit";
+        document.getElementById("res-msgg5").style.color="green";
         //document.writeln("Correct Unit ");
     }
     else if (w != "1") {
          document.getElementById("res-msgg5").innerHTML ="Incorrect Unit";
+         document.getElementById("res-msgg5").style.color="red";
           //document.writeln("Incorrect Unit");
     }
 
    if (z == "") {
 
         document.getElementById("res-msggg5").innerHTML = "Enter the tolerance "; 
+        document.getElementById("res-msggg5").style.color="blue";
        // document.writeln("Enter the tolerance :");
     }
     else if (z == "2") {
        document.getElementById("res-msggg5").innerHTML = "Correct Tolerance Value";
+       document.getElementById("res-msggg5").style.color="green";
        // document.writeln("Correct Tolerance Value");
     }
     else if (z != "2") {
        document.getElementById("res-msggg5").innerHTML = "Incorrect Tolerance value";
+       document.getElementById("res-msggg5").style.color="red";
        // document.writeln("Incorrect Tolerance value");
     }
 }
@@ -260,40 +304,49 @@ function resfunt(){
     
     if(x==""){
        document.getElementById("res-msg6").innerHTML = "Enter The Resistance "; 
+       document.getElementById("res-msg6").style.color="blue";
        //document.writeln("Enter The Resistance :");
     }else if(x=="6.15"){
        document.getElementById("res-msg6").innerHTML = "Correct Resistance Value"; 
+       document.getElementById("res-msg6").style.color="green";
      // document.writeln("Correct Resistance Value");
     }
     else if (x!= "6.15") {
         document.getElementById("res-msg6").innerHTML ="Incorrect resistance value";
+        document.getElementById("res-msg6").style.color="red";
        // document.writeln("Incorrect resistance value");
     }
      if (w == 0)
     {
         document.getElementById("res-msgg6").innerHTML ="Please select a unit ";
+        document.getElementById("res-msgg6").style.color="blue";
         //document.writeln("Please select a unit");
     }
     else if (w == "1") {
         document.getElementById("res-msgg6").innerHTML ="Correct Unit ";
+        document.getElementById("res-msgg6").style.color="green";
         //document.writeln("Correct Unit ");
     }
     else if (w != "1") {
          document.getElementById("res-msgg6").innerHTML ="Incorrect Unit";
+         document.getElementById("res-msgg6").style.color="red";
          // document.writeln("Incorrect Unit");
     }
 
    if (z == "") {
 
         document.getElementById("res-msggg6").innerHTML = "Enter the tolerance "; 
+        document.getElementById("res-msggg6").style.color="blue";
        // document.writeln("Enter the tolerance :");
     }
     else if (z == "0.25") {
         document.getElementById("res-msggg6").innerHTML = "Correct Tolerance Value";
+        document.getElementById("res-msggg6").style.color="green";
        // document.writeln("Correct Tolerance Value");
     }
     else if (z != "0.25") {
         document.getElementById("res-msggg6").innerHTML = "Incorrect Tolerance value";
+        document.getElementById("res-msggg6").style.color="red";
         //document.writeln("Incorrect Tolerance value");
     }
 }
