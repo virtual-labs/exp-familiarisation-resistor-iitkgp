@@ -1,1 +1,9 @@
 /* You CSS goes in here */
+
+table, th, td {
+    border: 1px solid black;
+    
+  }
+  .card{
+    margin-bottom: 10px;
+}
