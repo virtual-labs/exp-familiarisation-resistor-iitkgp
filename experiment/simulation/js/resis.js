@@ -192,32 +192,62 @@ function resfunc(){
        document.getElementById("res-msg4").innerHTML = "Enter The Resistance "; 
        document.getElementById("res-msg4").style.color="blue";
       // document.writeln("Enter The Resistance :");
-    }else if(x=="3.3"){
+    }else if((x=="3.3")||(x=="3300")){
        document.getElementById("res-msg4").innerHTML = "Correct Resistance Value"; 
        document.getElementById("res-msg4").style.color="green";
      // document.writeln("Correct Resistance Value");
     }
-    else if (x!= "3.3") {
+    else if ((x!= "3.3")  ){
         document.getElementById("res-msg4").innerHTML ="Incorrect resistance value";
         document.getElementById("res-msg4").style.color="red";
-        //document.writeln("Incorrect resistance value");
-    }
+}
+
+
+ else if ((x!= "3300")  ){
+     document.getElementById("res-msg4").innerHTML ="Incorrect resistance value";
+     document.getElementById("res-msg4").style.color="red";
+}
+
+
+
      if (w == 0)
     {
         document.getElementById("res-msgg4").innerHTML ="Please select a unit ";
         document.getElementById("res-msgg4").style.color="blue";
        // document.writeln("Please select a unit");
     }
-    else if (w == "2") {
+    else if ((x== "3.3") && (w!="2") ){
+        document.getElementById("res-msgg4").innerHTML ="Incorrect Unit value";
+        document.getElementById("res-msgg4").style.color="red";
+    }
+    else if ((x== "3300") && (w!="1") ){
+        document.getElementById("res-msgg4").innerHTML ="Incorrect Unit value";
+        document.getElementById("res-msgg4").style.color="red";
+    }
+
+    else if ((x== "3.3") && (w=="2") ){
+        document.getElementById("res-msg4").innerHTML = "Correct Resistance Value"; 
+       document.getElementById("res-msg4").style.color="green";
+        document.getElementById("res-msgg4").innerHTML ="Correct Unit value";
+        document.getElementById("res-msgg4").style.color="green";
+    }
+    else if ((x== "3300") && (w=="1") ){
+        document.getElementById("res-msg4").innerHTML = "Correct Resistance Value"; 
+       document.getElementById("res-msg4").style.color="green";
+        document.getElementById("res-msgg4").innerHTML ="Correct Unit value";
+        document.getElementById("res-msgg4").style.color="green";
+    }
+
+    /*else if ((w == "2") || (w== "1")){
         document.getElementById("res-msgg4").innerHTML ="Correct Unit";
         document.getElementById("res-msgg4").style.color="green";
        // document.writeln("Correct Unit Value");
     }
-    else if (w != "2") {
+    else if ((w != "2")|| (w!= "1")) {
          document.getElementById("res-msgg4").innerHTML ="Incorrect Unit";
          document.getElementById("res-msgg4").style.color="red";
          // document.writeln("Incorrect Unit");
-    }
+    }*/
 
    if (z == "") {
 
@@ -249,12 +279,12 @@ function resfunct(){
        document.getElementById("res-msg5").innerHTML = "Enter The Resistance "; 
        document.getElementById("res-msg5").style.color="blue";
        //document.writeln("Enter The Resistance :");
-    }else if(x=="1.58"){
+    }else if(x=="158"){
        document.getElementById("res-msg5").innerHTML = "Correct Resistance Value"; 
        document.getElementById("res-msg5").style.color="green";
       //document.writeln("Correct Resistance Value");
     }
-    else if (x!= "1.58") {
+    else if (x!= "158") {
         document.getElementById("res-msg5").innerHTML ="Incorrect resistance value";
         document.getElementById("res-msg5").style.color="red";
         //document.writeln("Incorrect resistance value");
@@ -265,12 +295,12 @@ function resfunct(){
         document.getElementById("res-msgg5").style.color="blue";
         //document.writeln("Please select a unit");
     }
-    else if (w == "1") {
+    else if (w == "4") {
         document.getElementById("res-msgg5").innerHTML ="Correct Unit";
         document.getElementById("res-msgg5").style.color="green";
         //document.writeln("Correct Unit ");
     }
-    else if (w != "1") {
+    else if (w != "4") {
          document.getElementById("res-msgg5").innerHTML ="Incorrect Unit";
          document.getElementById("res-msgg5").style.color="red";
           //document.writeln("Incorrect Unit");
@@ -306,12 +336,12 @@ function resfunt(){
        document.getElementById("res-msg6").innerHTML = "Enter The Resistance "; 
        document.getElementById("res-msg6").style.color="blue";
        //document.writeln("Enter The Resistance :");
-    }else if(x=="6.15"){
+    }else if(x=="615"){
        document.getElementById("res-msg6").innerHTML = "Correct Resistance Value"; 
        document.getElementById("res-msg6").style.color="green";
      // document.writeln("Correct Resistance Value");
     }
-    else if (x!= "6.15") {
+    else if (x!= "615") {
         document.getElementById("res-msg6").innerHTML ="Incorrect resistance value";
         document.getElementById("res-msg6").style.color="red";
        // document.writeln("Incorrect resistance value");
@@ -322,12 +352,12 @@ function resfunt(){
         document.getElementById("res-msgg6").style.color="blue";
         //document.writeln("Please select a unit");
     }
-    else if (w == "1") {
+    else if (w == "4") {
         document.getElementById("res-msgg6").innerHTML ="Correct Unit ";
         document.getElementById("res-msgg6").style.color="green";
         //document.writeln("Correct Unit ");
     }
-    else if (w != "1") {
+    else if (w != "4") {
          document.getElementById("res-msgg6").innerHTML ="Incorrect Unit";
          document.getElementById("res-msgg6").style.color="red";
          // document.writeln("Incorrect Unit");
