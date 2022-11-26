@@ -1,4 +1,6 @@
 ### Procedure
 
 
-#### This experiment is theory based only.
+- Input the resistance value.
+- Choose the Unit.
+- Input tolerance value.
