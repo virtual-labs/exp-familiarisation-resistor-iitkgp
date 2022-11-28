@@ -1,13 +1,446 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Add CSS at the head of HTML file -->
     <link rel="stylesheet" href="./css/main.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+ 
+ 
 </head>
 <body>
 		<!-- Your code goes here-->
+		<div class="container-fluid">
+			<div class="d-flex justify-content-center p-2  text-white">
+				<h3 style="color:green"> Color Code for Resistor  </h3>
+				</div>
+				</div>
+<div class="container-fluid">
+	<div class="row d-flex justify-content-center p-2 ">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<div  class=" card border-success rounded" style="border: 2px solid #07bc4c; ">
+				<div id="tbl" class=" table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl"  >
+<table class="table table-hover table-bordered ">
 
+<tr>
+<th >Color</th>
+<th>Digit</th>
+<th>Multiplier</th>
+<th>Tolerance %</th>
+<th> Color Band </th>
+</tr>
+<tr>
+<td >Black</td>
+<td>0</td>
+<td> 10<sup>0</sup>&nbsp; &#8486;</td>               
+<td></td>
+<td><input type="text" style="background-color:black;" class="form-control" readonly></td>
+</tr>
+<tr>
+<td >Brown</td>
+<td>1</td>
+<td> 10<sup>1</sup>&nbsp; &#8486;</td>
+<td>1</td>
+<td><input type="text" style="background-color:brown" class="form-control" readonly></td>
+</tr>
+<tr>
+<td >Red</td>
+<td>2</td>
+<td> 10<sup>2</sup>&nbsp; &#8486;</td>
+<td>2</td>
+<td><input type="text" style="background-color:red" class="form-control" readonly></td>
+</tr>
+<tr>
+<td >Orange</td>
+<td>3</td>
+<td> 10<sup>3</sup>&nbsp; &#8486; &nbsp;(1 K&#8486;)</td>
+<td></td>
+<td><input type="text" style="background-color:orange" class="form-control" readonly></td>
+</tr>
+<tr>
+<td >Yellow</td>
+<td>4</td>
+<td> 10<sup>4</sup> &nbsp; &#8486; &nbsp; (10K&#8486;)</td>
+<td></td>
+<td><input type="text" style="background-color:yellow" class="form-control" readonly></td>
+</tr>
+<tr>
+<td >Green</td>
+<td>5</td>
+<td> 10<sup>5</sup>&nbsp; Ω&nbsp;  (100KΩ)</td>
+<td>0.5</td>
+<td> <input type="text" style="background-color:green" class="form-control" readonly></td>
+</tr>
+<tr>
+<td>Blue</td>
+<td>6</td>
+<td> 10<sup>6</sup> &nbsp; &#8486; &nbsp; (1M&#8486;)</td>
+<td>0.25</td>
+<td><input type="text" style="background-color:blue" class="form-control" readonly></td>
+</tr>
+<tr> 
+<td >Violet</td>
+<td>7</td>
+<td> 10<sup>7</sup>&nbsp; &#8486; &nbsp;  (10M&#8486;)</td>
+<td>0.1</td>
+<td><input type="text" style="background-color:blueviolet" class="form-control" readonly></td>
+</tr>
+<tr>
+<td >Grey</td>
+<td>8</td>
+<td> 10<sup>8</sup>&nbsp; &#8486;   (100M&#8486;)</td>
+<td>0.05</td>
+<td><input type="text" style="background-color:grey" class="form-control" readonly></td>
+</tr>
+<tr>
+<td >White</td>
+<td>9</td>
+<td> 10<sup>9</sup>&nbsp; &#8486; &nbsp;  (1G&#8486;)</td>
+<td></td>
+<td><input type="text" style="background-color:whitesmoke;" class="form-control" readonly></td>
+</tr>
+<tr>
+<td >Gold</td>
+<td></td>
+<td> 10<sup>-1</sup>&nbsp;  &#8486;</td>
+<td>5</td>             
+<td><img src="images/goldband.png" class="img-responsive" style="width:180px;height:38px;position:relative;left:0px;"><!--input type="text" style="background-color:#FFD700;" class="form-control" readonly--></td>
+</tr>
+<tr><td >Silver</td>
+<td></td>
+<td> 10<sup>-2</sup> &nbsp; Ω</td>
+<td>10</td>
+<td><input type="text" style="background-color:silver;" class="form-control" readonly></td>
+</tr>
+<tr>
+<td >None</td>
+<td></td>
+<td> </td>
+<td>20</td>
+<td></td>
+</tr>
+
+</table>
+</div>
+</div>
+</div>
+<!--/div>
+</div-->
+
+
+
+<!--div class="container-fluid"> 
+	<div class="row d-flex justify-content-center"-->
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			
+
+<div id="accordion">
+
+	<!-- ------------------------------------Resistor 1--------------------------------->
+
+	<div class="card">
+	  <div class="card-header" id="headingOne">
+		<h5 class="mb-0">
+		  <button class="btn btn-primary col-xs-12 col-md-12 col-sm-12 col-lg-12" data-toggle="collapse" data-target="#resistor1" aria-expanded="true" aria-controls="collapseOne">
+			Simulation 1
+		  </button>
+		  
+		</h5>
+	  </div>
+  
+		<div  id="resistor1" class=" collapse card border-primary rounded" aria-labelledby="headingOne" data-parent="#accordion" style="border: 2px solid #0665f5">
+			<div class="card-body" >
+		<h4>1.</h4>&nbsp;   <img src="images/resis1.png" class="img-responsive" /><br>
+		<div class="form-group row mx-sm-12 mb-12">
+		<label for="res1" class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter the resistance value:</label>
+		<input  class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" id="r1" type ="text"  name ="Name"> &nbsp;&nbsp;
+		<select class=" form-control col-xs-3 col-md-3 col-sm-3 col-lg-3"  id="res-select"  name="unit">
+			<option value="0" selected>Choose unit</option>
+			<option value="1">&#8486;</option>
+			<option value="2">k&#8486;</option>
+			<option value="3">M&#8486;</option>
+			<option value="4">G&#8486;</option>
+		</select>
+		</div>
+		<div class="form-group row">
+		<label for="rest1" class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter the tolerance :&nbsp;+/-&nbsp;</label>
+		<input class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-tol" type="text"  size="20" name="tol" >
+		<label for="restu1" class="col-xs-3 col-md-3 col-sm-3 col-lg-3" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">%</label><br><br>
+		</div>
+		<div class="form-group row">
+		<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msg"></p>
+		<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgr" style="visibility: hidden;">The value of resistance is 47</p> </div>
+		<div class="form-group row">
+		  <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msgg"></p>
+		  <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgu" style="visibility: hidden;">The unit is k&#8486;</p></div>
+		  <div class="form-group row">
+		   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msggg"></p>
+		   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgt" style="visibility: hidden;">The value of tolerance is 5</p>
+		   </div>
+		   <br>
+		   
+		   <button class="btn btn-success col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-btn" onclick="resfn()">Check</button>  
+		  
+		   <button class="btn btn-warning col-xs-3 col-md-3 col-sm-3 col-lg-3 float-right" id="res-sbtn" onclick="showans1()" disabled>Show Answer</button>                         
+		
+		</div>
+		</div>
+
+	</div>
+
+	<!-- ------------------------------------Resistor 2--------------------------------->
+
+	<div class="card">
+	  <div class="card-header" id="headingTwo">
+		<h5 class="mb-0">
+		  <button class="btn btn-primary collapsed col-xs-12 col-md-12 col-sm-12 col-lg-12" data-toggle="collapse" data-target="#resistor2" aria-expanded="false" aria-controls="collapseTwo">
+			Simulation 2
+		  </button>
+		</h5>
+	  </div>
+	  <div id="resistor2" class="collapse card border-primary rounded" aria-labelledby="headingTwo" data-parent="#accordion" style="border: 2px solid #0665f5">
+		<div class="card-body" >	
+	<h4>2.</h4>&nbsp;
+		<img src=" images/resis2.png" class="img-responsive" /><br>
+		<div class="form-group row">
+			<label for="res2" class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter the resistance value:</label>
+		<input id="r2" type ="text" class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" name ="Name1"/> &nbsp;&nbsp;
+		<select class=" form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-select2" name="unit1">
+			<option value="0" selected>choose unit</option>
+			<option value="1">&#8486;</option>
+			<option value="2">k&#8486;</option>
+			<option value="3">M&#8486;</option>
+			<option value="4">G&#8486;</option>
+		</select>
+	</div>
+	<div class="form-group row">
+		<label for="rest2" class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter the tolerance :&nbsp;+/-&nbsp; </label>
+		<input class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-tol2" type="text"  size="20" name="tol1" />
+		<label for="restu2" class="col-xs-3 col-md-3 col-sm-3 col-lg-3" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">%</label>
+	</div>
+	<div class="form-group row">
+		<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msg2"></p>
+		<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgr2" style="visibility: hidden;">The value of resistance is 5.2</p></div>
+		<div class="form-group row">
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msgg2"></p>
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgu2" style="visibility: hidden;">The unit is &#8486;</p></div>
+	<div class="form-group row">
+	   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msggg2">
+		<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgt2" style="visibility: hidden;">The value of tolerance is 10</p>
+	   </p></div>
+	   
+	   <br>
+		 <button class="btn btn-success col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-btn" onclick="resfnn()">Check</button>      
+		 <button class="btn btn-warning col-xs-3 col-md-3 col-sm-3 col-lg-3 float-right" id="res-sbtn2" onclick="showans2()" disabled>Show Answer</button> 
+		</div>
+		</div>  
+	</div>
+<!-- ------------------------------------Resistor 3--------------------------------->
+
+	<div class="card">
+	  <div class="card-header" id="headingThree">
+		<h5 class="mb-0">
+		  <button class="btn btn-primary collapsed col-xs-12 col-md-12 col-sm-12 col-lg-12" data-toggle="collapse" data-target="#resistor3" aria-expanded="false" aria-controls="collapseThree">
+			Simulation 3
+		  </button>
+		</h5>
+	  </div>
+	  <div  id="resistor3" class="collapse card border-primary rounded" aria-labelledby="headingThree" data-parent="#accordion" style="border: 2px solid #0665f5">
+	<div class="card-body" >	
+
+	<h4>3.</h4>&nbsp;    <img src="images/resis3.png" class="img-responsive" /><br>
+	<div class="form-group row">
+		<label for="res3" class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter the resistance value:</label>
+	<input id="r3" class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" type ="text" size="20" name ="Name2"/> &nbsp;&nbsp;
+	<select class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-select3" name="unit2">
+		<option value="0" selected>choose unit</option>
+		<option value="1">&#8486;</option>
+		<option value="2">k&#8486;</option>
+		<option value="3">M&#8486;</option>
+		<option value="4">G&#8486;</option>
+	</select>
+</div>
+<div class="form-group row">
+	<label for="rest3" class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter the tolerance :&nbsp;+/-&nbsp;</label>
+	<input id="res-tol3" class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" type="text"  size="20" name="tol2" />
+	
+		<label for="restu3" class="col-xs-3 col-md-3 col-sm-3 col-lg-3" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">%</label>
+</div>
+<div class="form-group row">
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msg3"></p>
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgr3" style="visibility: hidden;">The value of resistance is 97</p></div>
+	<div class="form-group row">
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msgg3"></p>
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgu3" style="visibility: hidden;">The unit is &#8486;</p></div>
+	<div class="form-group row">
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msggg3"></p>
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgt3" style="visibility: hidden;">The value of tolerance is 20</p></div>
+
+	 <button class="btn btn-success col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-btn" onclick="resfun()">Check</button>    
+	 <button class="btn btn-warning col-xs-3 col-md-3 col-sm-3 col-lg-3 float-right" id="res-sbtn3" onclick="showans3()" disabled>Show Answer</button>  
+	</div>
+	 </div>   
+	</div>
+
+<!-- ------------------------------------Resistor 4--------------------------------->
+
+<div class="card">
+	<div class="card-header" id="headingFour">
+	  <h5 class="mb-0">
+		<button class="btn btn-primary collapsed col-xs-12 col-md-12 col-sm-12 col-lg-12" data-toggle="collapse" data-target="#resistor4" aria-expanded="true" aria-controls="collapseOne">
+		  Simulation 4
+		</button>
+	  </h5>
+	</div>
+
+	  <div id="resistor4" class="collapse card border-primary rounded" aria-labelledby="headingFour" data-parent="#accordion" style="border: 2px solid #0665f5" >
+	<div class="card-body" >	
+
+
+	<h4>4.</h4>&nbsp;   <img src="images/resis4.png" class="img-responsive" /><br>
+	<div class="form-group row">
+		<label for="res4" class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter the resistance value:&nbsp;</label>
+	<input id="r4" class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" type ="text" size="20" name ="Name3"/> &nbsp;&nbsp;
+	<select class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-select4" name="unit3">
+		<option value="0" selected>choose unit</option>
+		<option value="1">&#8486;</option>
+		<option value="2">k&#8486;</option>
+		<option value="3">M&#8486;</option>
+		<option value="4">G&#8486;</option>
+	</select></div>
+
+	<div class="form-group row">
+		<label for="rest4" class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter the tolerance :&nbsp;+/-&nbsp;</label>
+	<input id="res-tol4" class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" type="text"  size="20" name="tol3" />
+		<label for="restu4" class="col-xs-3 col-md-3 col-sm-3 col-lg-3" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">%</label>
+</div>
+<div class="form-group row">
+	 <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msg4"></p>
+	 <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgr4" style="visibility: hidden;">The value of resistance is 3.3/ 3300 </p></div>
+	 <div class="form-group row">
+	 <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msgg4"></p>
+	 <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgu4" style="visibility: hidden;">The value of resistance is k&#8486; / &#8486;</p></div>
+	 <div class="form-group row">
+	 <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msggg4"></p>
+   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgt4" style="visibility: hidden;">The value of resistance is 0.1</p></div>
+   <br>
+	 <button class="btn btn-success col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-btn" onclick="resfunc()">Check</button>  
+	 <button class="btn btn-warning col-xs-3 col-md-3 col-sm-3 col-lg-3 float-right" id="res-sbtn4" onclick="showans4()" disabled>Show Answer</button>  
+	</div>
+	 </div>
+
+  </div>
+
+
+<!-- ------------------------------------Resistor 5--------------------------------->
+
+
+<div class="card">
+	<div class="card-header" id="headingFive">
+	  <h5 class="mb-0">
+		<button class="btn btn-primary collapsed col-xs-12 col-md-12 col-sm-12 col-lg-12" data-toggle="collapse" data-target="#resistor5" aria-expanded="true" aria-controls="collapseOne">
+		  Simulation 5
+		</button>
+	  </h5>
+	</div>
+
+	  <div  id="resistor5" class="collapse card border-primary  rounded" aria-labelledby="headingFive" data-parent="#accordion" style="border: 2px solid #0665f5">
+	<div class="card-body" >	
+	<h4>5.</h4>&nbsp;   <img src=" images/resis5.png" class="img-responsive" /><br>
+	<div class="form-group row">
+		<label for="res5" class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter the resistance value:&nbsp;</label>
+	<input id="r5" class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" type ="text" size="20" name ="Name4"/> &nbsp;&nbsp;
+	<select class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-select5" name="unit4">
+		<option value="0" selected>choose unit</option>
+		<option value="1">&#8486;</option>
+		<option value="2">k&#8486;</option>
+		<option value="3">M&#8486;</option>
+		<option value="4">G&#8486;</option>
+	</select>
+	</div>
+
+	<div class="form-group row">
+		<label for="rest5" class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter the tolerance :&nbsp;+/-&nbsp;</label>
+	<input  id="res-tol5" class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3"  type="text"  size="20" name="tol4" />
+	
+		<label for="restu5" class="col-xs-3 col-md-3 col-sm-3 col-lg-3" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">%</label>
+</div>
+<div class="form-group row">
+   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msg5"></p>
+   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgr5" style="visibility: hidden;">The value of resistance is 158</p></div>
+   <div class="form-group row">
+   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msgg5"></p>
+   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgu5" style="visibility: hidden;">The unit is G&#8486;</p></div>
+   <div class="form-group row">  
+   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msggg5"></p>
+   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgt5" style="visibility: hidden;">The value of tolerance is 2</p></div>
+   <br>
+	 <button class="btn btn-success col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-btn" onclick="resfunct()">Check</button> 
+	 <button class="btn btn-warning col-xs-3 col-md-3 col-sm-3 col-lg-3 float-right" id="res-sbtn5" onclick="showans5()" disabled>Show Answer</button>  
+	 </div>
+	 </div>
+
+  </div>
+<!------------------------- Resistor 6-------------------------->
+
+<div class="card">
+	<div class="card-header" id="headingSix">
+	  <h5 class="mb-0">
+		<button class="btn btn-primary collapsed col-xs-12 col-md-12 col-sm-12 col-lg-12" data-toggle="collapse" data-target="#resistor6" aria-expanded="true" aria-controls="collapseOne">
+		  Simulation 6
+		</button>
+	  </h5>
+	</div>
+
+	  <div id="resistor6" class="collapse card border-primary rounded" aria-labelledby="headingSix" data-parent="#accordion" style="border: 2px solid #0665f5">
+	<div class="card-body" >	
+	<h4>6.</h4>&nbsp;   <img src=" images/resis6.png" class="img-responsive" /><br>
+	<div class="form-group row">
+		<label for="res6" class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter the resistance value:&nbsp;</label>
+	<input  id="r6" class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" type ="text" size="20" name ="Name5"/> &nbsp;&nbsp;
+	<select class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-select6"name="unit5">
+		<option value="0" selected>choose unit</option>
+		<option value="1">&#8486;</option>
+		<option value="2">k&#8486;</option>
+		<option value="3">M&#8486;</option>
+		<option value="4">G&#8486;</option>
+	</select>
+	</div>
+
+	<div class="form-group row">
+		<label for="rest6" class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter the tolerance :&nbsp;+/-&nbsp;</label>
+	<input   id="res-tol6" class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" type="text"  size="20" name="tol5" />
+	
+		<label for="restu6" class="col-xs-3 col-md-3 col-sm-3 col-lg-3" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">%</label>
+</div>
+<div class="form-group row">
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msg6"></p>
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgr6" style="visibility: hidden;">The value of resistance is 615</p></div>
+	<div class="form-group row">
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msgg6"></p>
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgu6" style="visibility: hidden;">The unit is G&#8486;</p></div>
+	<div class="form-group row">
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msggg6"></p>
+   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgt6" style="visibility: hidden;">The value of tolerance is 0.25</p></div>
+   <br>
+	 <button class="btn btn-success col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-btn" onclick="resfunt()">Check</button>  
+	 <button class="btn btn-warning col-xs-3 col-md-3 col-sm-3 col-lg-3 float-right" id="res-sbtn6" onclick="showans6()" disabled>Show Answer</button>  
+</div></div>
+	</div>
+</div>
+</div>
+
+  </div>
+  </div>
+  
 	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+        
+		<script src="./js/resis.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>
+<!-- style="width:300px;height:80px;" image -->

@@ -1,24 +1,33 @@
+
+
 ## Introduction
 
+<div align="center">
+<img src="experiment/images/iitkgp.png" width="10%">
+</div>
 
-<b>Discipline | <b>Fill your discipline name here
+<b>Discipline | <b> Electronics and Communication and Engineering 
 :--|:--|
-<b> Lab | <b> Fill your lab name here
-<b> Experiment|     <b> Fill your experiment name and number here
+<b> Lab | <b> **Basic Electronics**
+<b> Experiment|     <b> **Familiarisation with Resistor and Experiment 1**
+
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+<!--Fill a brief description of this experiment here-->
 
-<b>Name of Developer | <b> Fill the name of experiment owner here 
+<b>Name of Developer | <b> **Prof. Chittaranjan Mandal**
 :--|:--|
-<b> Institute | <b>  
-<b> Email id|     <b>  
-<b> Department |  
+<b> Institute | <b>  **Indian Institute of Technology Kharagpur**
+<b> Email id|     <b>  **chitta@iitkgp.ac.in**
+<b> Department |  **Department of Computer Science and Engineering**
+<b>Webpage| <b> [http://www.iitkgp.ac.in/department/CS/faculty/cs-chitta](http://www.iitkgp.ac.in/department/CS/faculty/cs-chitta)
+
 
 ### Contributors List
 
-SrNo | Name | Faculty or Student | Department| Institute | Email id
-:--|:--|:--|:--|:--|:--|
-1 | . | . | . | . | .
-2 | . | . | . | . | .
+**SrNo** | **Name** | **VLabs Developer or Integration Engineer** | **Department** | **Institute** |  **Email** |
+:--|:--|:--|:--|:--| :--|
+1 | **Sukriti Dhang** | Developer | Department of Mechanical Engineering | IIT Kharagpur | sukritid05@gmail.com |
+2 | **Pabitra Kumar Jana** | Integration  | Department of Mechanical Engineering | IIT Kharagpur | pkjana@mech.iitkgp.ernet.in |
+3 | **Prakriti Dhang** | Integration | Department of Mechanical Engineering | IIT Kharagpur | prakritidhang05@gmail.com |
