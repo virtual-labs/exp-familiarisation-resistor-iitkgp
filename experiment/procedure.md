@@ -4,6 +4,8 @@
 - Enter the resistance value.
 - Choose the Unit.
 - Enter tolerance value.
+- Click "Check" button to verify the result.
+- Click "Show button" to display the answer.
 
 ### Color code chart
 

@@ -36,7 +36,7 @@
 <td>0</td>
 <td> 10<sup>0</sup>&nbsp; &#8486;</td>               
 <td></td>
-<td><input type="text" style="background-color:black" class="form-control" readonly></td>
+<td><input type="text" style="background-color:black;" class="form-control" readonly></td>
 </tr>
 <tr>
 <td >Brown</td>
@@ -74,7 +74,7 @@
 <td> <input type="text" style="background-color:green" class="form-control" readonly></td>
 </tr>
 <tr>
-<td >Blue</td>
+<td>Blue</td>
 <td>6</td>
 <td> 10<sup>6</sup> &nbsp; &#8486; &nbsp; (1M&#8486;)</td>
 <td>0.25</td>
@@ -146,12 +146,13 @@
 		  <button class="btn btn-primary col-xs-12 col-md-12 col-sm-12 col-lg-12" data-toggle="collapse" data-target="#resistor1" aria-expanded="true" aria-controls="collapseOne">
 			Simulation 1
 		  </button>
+		  
 		</h5>
 	  </div>
   
 		<div  id="resistor1" class=" collapse card border-primary rounded" aria-labelledby="headingOne" data-parent="#accordion" style="border: 2px solid #0665f5">
 			<div class="card-body" >
-		<h4>1.</h4>&nbsp;   <img src="images/resis1.png" class="img-responsive" style="width:300px;height:100px;"/><br>
+		<h4>1.</h4>&nbsp;   <img src="images/resis1.png" class="img-responsive" /><br>
 		<div class="form-group row mx-sm-12 mb-12">
 		<label for="res1" class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter the resistance value:</label>
 		<input  class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" id="r1" type ="text"  name ="Name"> &nbsp;&nbsp;
@@ -168,11 +169,21 @@
 		<input class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-tol" type="text"  size="20" name="tol" >
 		<label for="restu1" class="col-xs-3 col-md-3 col-sm-3 col-lg-3" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">%</label><br><br>
 		</div>
-		<p class="h6" id="res-msg"></p>
-		  <p class="h6" id="res-msgg"></p>
-		   <p class="h6" id="res-msggg"></p>
+		<div class="form-group row">
+		<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msg"></p>
+		<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgr" style="visibility: hidden;">The value of resistance is 47</p> </div>
+		<div class="form-group row">
+		  <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msgg"></p>
+		  <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgu" style="visibility: hidden;">The unit is k&#8486;</p></div>
+		  <div class="form-group row">
+		   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msggg"></p>
+		   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgt" style="visibility: hidden;">The value of tolerance is 5</p>
+		   </div>
 		   <br>
-		   <button class="btn btn-success col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-btn" onclick="resfn()">check</button>   <br><br>                           
+		   
+		   <button class="btn btn-success col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-btn" onclick="resfn()">Check</button>  
+		  
+		   <button class="btn btn-warning col-xs-3 col-md-3 col-sm-3 col-lg-3 float-right" id="res-sbtn" onclick="showans1()" disabled>Show Answer</button>                         
 		
 		</div>
 		</div>
@@ -192,7 +203,7 @@
 	  <div id="resistor2" class="collapse card border-primary rounded" aria-labelledby="headingTwo" data-parent="#accordion" style="border: 2px solid #0665f5">
 		<div class="card-body" >	
 	<h4>2.</h4>&nbsp;
-		<img src=" images/resis2.png" class="img-responsive" style="width:300px;height:80px;"/><br>
+		<img src=" images/resis2.png" class="img-responsive" /><br>
 		<div class="form-group row">
 			<label for="res2" class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter the resistance value:</label>
 		<input id="r2" type ="text" class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" name ="Name1"/> &nbsp;&nbsp;
@@ -209,12 +220,20 @@
 		<input class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-tol2" type="text"  size="20" name="tol1" />
 		<label for="restu2" class="col-xs-3 col-md-3 col-sm-3 col-lg-3" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">%</label>
 	</div>
-		<p class="h6" id="res-msg2"></p>
-	<p class="h6" id="res-msgg2"></p>
-	   <p class="h6" id="res-msggg2"></p>
+	<div class="form-group row">
+		<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msg2"></p>
+		<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgr2" style="visibility: hidden;">The value of resistance is 5.2</p></div>
+		<div class="form-group row">
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msgg2"></p>
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgu2" style="visibility: hidden;">The unit is &#8486;</p></div>
+	<div class="form-group row">
+	   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msggg2">
+		<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgt2" style="visibility: hidden;">The value of tolerance is 10</p>
+	   </p></div>
 	   
 	   <br>
-		 <button class="btn btn-success col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-btn" onclick="resfnn()">check</button>      
+		 <button class="btn btn-success col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-btn" onclick="resfnn()">Check</button>      
+		 <button class="btn btn-warning col-xs-3 col-md-3 col-sm-3 col-lg-3 float-right" id="res-sbtn2" onclick="showans2()" disabled>Show Answer</button> 
 		</div>
 		</div>  
 	</div>
@@ -231,7 +250,7 @@
 	  <div  id="resistor3" class="collapse card border-primary rounded" aria-labelledby="headingThree" data-parent="#accordion" style="border: 2px solid #0665f5">
 	<div class="card-body" >	
 
-	<h4>3.</h4>&nbsp;    <img src="images/resis3.png" class="img-responsive" style="width:300px;height:100px;"/><br>
+	<h4>3.</h4>&nbsp;    <img src="images/resis3.png" class="img-responsive" /><br>
 	<div class="form-group row">
 		<label for="res3" class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter the resistance value:</label>
 	<input id="r3" class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" type ="text" size="20" name ="Name2"/> &nbsp;&nbsp;
@@ -249,11 +268,19 @@
 	
 		<label for="restu3" class="col-xs-3 col-md-3 col-sm-3 col-lg-3" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">%</label>
 </div>
-	<p class="h6" id="res-msg3"></p>
-	<p class="h6" id="res-msgg3"></p>
-   <p class="h6" id="res-msggg3"></p><br>
-	 <button class="btn btn-success col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-btn" onclick="resfun()">check</button>    
-	 </div>
+<div class="form-group row">
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msg3"></p>
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgr3" style="visibility: hidden;">The value of resistance is 97</p></div>
+	<div class="form-group row">
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msgg3"></p>
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgu3" style="visibility: hidden;">The unit is &#8486;</p></div>
+	<div class="form-group row">
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msggg3"></p>
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgt3" style="visibility: hidden;">The value of tolerance is 20</p></div>
+
+	 <button class="btn btn-success col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-btn" onclick="resfun()">Check</button>    
+	 <button class="btn btn-warning col-xs-3 col-md-3 col-sm-3 col-lg-3 float-right" id="res-sbtn3" onclick="showans3()" disabled>Show Answer</button>  
+	</div>
 	 </div>   
 	</div>
 
@@ -272,7 +299,7 @@
 	<div class="card-body" >	
 
 
-	<h4>4.</h4>&nbsp;   <img src="images/resis4.png" class="img-responsive" style="width:300px;height:100px;"/><br>
+	<h4>4.</h4>&nbsp;   <img src="images/resis4.png" class="img-responsive" /><br>
 	<div class="form-group row">
 		<label for="res4" class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter the resistance value:&nbsp;</label>
 	<input id="r4" class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" type ="text" size="20" name ="Name3"/> &nbsp;&nbsp;
@@ -289,12 +316,19 @@
 	<input id="res-tol4" class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" type="text"  size="20" name="tol3" />
 		<label for="restu4" class="col-xs-3 col-md-3 col-sm-3 col-lg-3" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">%</label>
 </div>
-	 <p class="h6" id="res-msg4"></p>
-	 <p class="h6" id="res-msgg4"></p>
-   <p class="h6" id="res-msggg4"></p>
+<div class="form-group row">
+	 <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msg4"></p>
+	 <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgr4" style="visibility: hidden;">The value of resistance is 3.3/ 3300 </p></div>
+	 <div class="form-group row">
+	 <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msgg4"></p>
+	 <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgu4" style="visibility: hidden;">The value of resistance is k&#8486; / &#8486;</p></div>
+	 <div class="form-group row">
+	 <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msggg4"></p>
+   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgt4" style="visibility: hidden;">The value of resistance is 0.1</p></div>
    <br>
-	 <button class="btn btn-success col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-btn" onclick="resfunc()">check</button>  
-	 </div>
+	 <button class="btn btn-success col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-btn" onclick="resfunc()">Check</button>  
+	 <button class="btn btn-warning col-xs-3 col-md-3 col-sm-3 col-lg-3 float-right" id="res-sbtn4" onclick="showans4()" disabled>Show Answer</button>  
+	</div>
 	 </div>
 
   </div>
@@ -314,7 +348,7 @@
 
 	  <div  id="resistor5" class="collapse card border-primary  rounded" aria-labelledby="headingFive" data-parent="#accordion" style="border: 2px solid #0665f5">
 	<div class="card-body" >	
-	<h4>5.</h4>&nbsp;   <img src=" images/resis5.png" class="img-responsive" style="width:300px;height:100px;"/><br>
+	<h4>5.</h4>&nbsp;   <img src=" images/resis5.png" class="img-responsive" /><br>
 	<div class="form-group row">
 		<label for="res5" class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter the resistance value:&nbsp;</label>
 	<input id="r5" class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" type ="text" size="20" name ="Name4"/> &nbsp;&nbsp;
@@ -333,11 +367,18 @@
 	
 		<label for="restu5" class="col-xs-3 col-md-3 col-sm-3 col-lg-3" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">%</label>
 </div>
-   <p class="h6" id="res-msg5"></p>
-   <p class="h6" id="res-msgg5"></p>
-   <p class="h6" id="res-msggg5"></p>
+<div class="form-group row">
+   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msg5"></p>
+   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgr5" style="visibility: hidden;">The value of resistance is 158</p></div>
+   <div class="form-group row">
+   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msgg5"></p>
+   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgu5" style="visibility: hidden;">The unit is G&#8486;</p></div>
+   <div class="form-group row">  
+   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msggg5"></p>
+   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgt5" style="visibility: hidden;">The value of tolerance is 2</p></div>
    <br>
-	 <button class="btn btn-success col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-btn" onclick="resfunct()">check</button>  
+	 <button class="btn btn-success col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-btn" onclick="resfunct()">Check</button> 
+	 <button class="btn btn-warning col-xs-3 col-md-3 col-sm-3 col-lg-3 float-right" id="res-sbtn5" onclick="showans5()" disabled>Show Answer</button>  
 	 </div>
 	 </div>
 
@@ -355,7 +396,7 @@
 
 	  <div id="resistor6" class="collapse card border-primary rounded" aria-labelledby="headingSix" data-parent="#accordion" style="border: 2px solid #0665f5">
 	<div class="card-body" >	
-	<h4>6.</h4>&nbsp;   <img src=" images/resis6.png" class="img-responsive" style="width:300px;height:80px;"/><br>
+	<h4>6.</h4>&nbsp;   <img src=" images/resis6.png" class="img-responsive" /><br>
 	<div class="form-group row">
 		<label for="res6" class="col-xs-5 col-md-5 col-sm-5 col-lg-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter the resistance value:&nbsp;</label>
 	<input  id="r6" class="form-control col-xs-3 col-md-3 col-sm-3 col-lg-3" type ="text" size="20" name ="Name5"/> &nbsp;&nbsp;
@@ -374,11 +415,18 @@
 	
 		<label for="restu6" class="col-xs-3 col-md-3 col-sm-3 col-lg-3" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">%</label>
 </div>
-	<p class="h6" id="res-msg6"></p>
-	<p class="h6" id="res-msgg6"></p>
-   <p class="h6" id="res-msggg6"></p>
+<div class="form-group row">
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msg6"></p>
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgr6" style="visibility: hidden;">The value of resistance is 615</p></div>
+	<div class="form-group row">
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msgg6"></p>
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgu6" style="visibility: hidden;">The unit is G&#8486;</p></div>
+	<div class="form-group row">
+	<p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6" id="res-msggg6"></p>
+   <p class="h6 col-xs-6 col-md-6 col-sm-6 col-lg-6 d-flex justify-content-end" id="shw-msgt6" style="visibility: hidden;">The value of tolerance is 0.25</p></div>
    <br>
-	 <button class="btn btn-success col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-btn" onclick="resfunt()">check</button>  <br><br>    
+	 <button class="btn btn-success col-xs-3 col-md-3 col-sm-3 col-lg-3" id="res-btn" onclick="resfunt()">Check</button>  
+	 <button class="btn btn-warning col-xs-3 col-md-3 col-sm-3 col-lg-3 float-right" id="res-sbtn6" onclick="showans6()" disabled>Show Answer</button>  
 </div></div>
 	</div>
 </div>
@@ -395,3 +443,4 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>
+<!-- style="width:300px;height:80px;" image -->
