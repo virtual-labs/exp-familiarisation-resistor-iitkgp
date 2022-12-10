@@ -1,4 +1,4 @@
-### Aim of the experiment
+## Aim of the experiment
 
 At the end of the experiment the student would be able to
 - Explain the function and unit of Resistors
