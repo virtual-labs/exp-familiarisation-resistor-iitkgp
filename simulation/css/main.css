@@ -1,0 +1,22 @@
+/* You CSS goes in here */
+
+table, th, td {
+    border: 1px solid black;
+    
+  }
+  th:first-child, td:first-child
+  {
+    position:sticky;
+    left:0px;
+    z-index: 2;
+    background-color: #d3d3d3;
+    color: #000000;
+    font-weight: bold;
+  }
+  th{
+    font-weight: bold;
+  }
+ 
+  .card{
+    margin-bottom: 10px;
+}
