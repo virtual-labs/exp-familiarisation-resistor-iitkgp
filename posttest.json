@@ -1,0 +1,40 @@
+{
+    "version": 2.0,
+    "questions": [
+      {
+        "question":"For below resistance find out the resistance and tolerance value. <br> <p style='text-align:center'><img src='./images/r1.PNG'></p>",
+        "answers": {
+          "a": "47 Kohm, 5",
+          "b": "4 Kohm, 7",
+          "c": "17 Kohm, 1",
+          "d": "41 Kohm, 5"
+        },
+        "explanations": {
+          "a": "You have choosen option (a). The answer is correct",
+          "b": "You have choosen option (b). The answer is incorrect",
+          "c": "You have choosen option (c). The answer is incorrect",
+          "d": "You have choosen option (d). The answer is incorrect"
+        },
+        "correctAnswer": "a",
+        "difficulty": "beginner"
+      },
+      {
+        "question": "For below resistance find out the resistance and tolerance value.<br/><p style=\"text-align:center\"><img src=\"images/r5.PNG\"></p>",
+        "answers": {
+          "a": "2 KOhm, 3",
+          "b": "1.58 KOhm, 2",
+          "c": "1.58 Ohm, 2",
+          "d": "5 Ohm, 5"
+        },
+        "explanations": {
+          "a": "You have choosen option (a). The answer is incorrect  ",
+          "b": "You have choosen option (b). The answer is incorrect",
+          "c": "You have choosen option (c). The answer is correct",
+          "d": "You have choosen option (d). The answer is incorrect"
+        },
+        "correctAnswer": "c",
+        "difficulty": "beginner"
+      }
+    ]
+  }
+  
