@@ -146,9 +146,7 @@ None | 0 |   | 20 | <input type="text" style="background-color:none" > |
 
 ### Slides of the above theory
 
-- Slides:   [Measurements of  Resistance](http://vlabs.iitkgp.ac.in/be/exp1/content/slides.html)
-
-- Pdf:  [Measurements of  Resistance](http://vlabs.iitkgp.ac.in/be/exp1/content/measureresis.pdf)
+- Pdf:  [Measurements of  Resistance](./images/measureresis.pdf)
 
 
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
