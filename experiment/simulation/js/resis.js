@@ -20,7 +20,7 @@ function resfn(){
        document.getElementById("res-msg").innerHTML = "Enter The Resistance "; 
        document.getElementById("res-msg").style.color="blue";
      //  document.writeln("<p>Enter The Resistance :</p>");
-    }else if(x=="47"){
+    }else if((x=="47") || (x=="47000")){
        document.getElementById("res-msg").innerHTML = "Correct Resistance  Value";
        document.getElementById("res-msg").style.color="green"; 
       //document.writeln("<p>Correct Resistance  Value</p>");
@@ -31,21 +31,47 @@ function resfn(){
        document.getElementById("res-sbtn").disabled=false;
         //document.writeln("<p>Incorrect resistance value</p>");
     }
+
+    else if (x!= "47000") {
+       document.getElementById("res-msg").innerHTML ="Incorrect resistance value";
+       document.getElementById("res-msg").style.color="red";
+       document.getElementById("res-sbtn").disabled=false;
+        //document.writeln("<p>Incorrect resistance value</p>");
+    }
      if (w == 0)
     {
         document.getElementById("res-msgg").innerHTML ="Please select a unit ";
        document.getElementById("res-msgg").style.color="blue";
     }
-    else if (w == "2" ) {
-        document.getElementById("res-msgg").innerHTML ="Correct  Unit Value";
-       
+   
+   else if ((x== "47") && (w!="2") ){
+        document.getElementById("res-msgg").innerHTML ="Incorrect Unit value";
+        document.getElementById("res-msgg").style.color="red";
+        document.getElementById("res-sbtn4").disabled=false;
+    }
+    else if ((x== "47000") && (w!="1") ){
+        document.getElementById("res-msgg").innerHTML ="Incorrect Unit value";
+        document.getElementById("res-msgg").style.color="red";
+        document.getElementById("res-sbtn4").disabled=false;
+    }
+
+    else if ((x == "47") && (w == "2") ){
+        document.getElementById("res-msg").innerHTML = "Correct Resistance Value"; 
+       document.getElementById("res-msg").style.color="green";
+        document.getElementById("res-msgg").innerHTML ="Correct Unit Value";
         document.getElementById("res-msgg").style.color="green";
     }
-    else if (w != "2") {
-         document.getElementById("res-msgg").innerHTML ="Incorrect Unit";
-         document.getElementById("res-msgg").style.color="red";
-         document.getElementById("res-sbtn").disabled=false;
-          
+    else if ((x== "47000") && (w=="1") ){
+        document.getElementById("res-msg").innerHTML = "Correct Resistance Value"; 
+       document.getElementById("res-msg").style.color="green";
+        document.getElementById("res-msgg").innerHTML ="Correct Unit Value";
+        document.getElementById("res-msgg").style.color="green";
+    }
+     else if ((w != "2")|| (w !="1") ) {
+        document.getElementById("res-msgg").innerHTML ="Incorrect  Unit Value";
+       document.getElementById("res-msgg").style.color="red";
+
+        
     }
 
    if (z == "") {
@@ -405,30 +431,36 @@ function showans1()
     document.getElementById('shw-msgr').style.visibility="visible";
     document.getElementById('shw-msgu').style.visibility="visible";
     document.getElementById('shw-msgt').style.visibility="visible";
+    document.getElementById('colorname1').style.display="block";
+
 }
 function showans2()
 {
     document.getElementById('shw-msgr2').style.visibility="visible";
     document.getElementById('shw-msgu2').style.visibility="visible";
     document.getElementById('shw-msgt2').style.visibility="visible";
+    document.getElementById('colorname2').style.display="block";
 }
 function showans3()
 {
     document.getElementById('shw-msgr3').style.visibility="visible";
     document.getElementById('shw-msgu3').style.visibility="visible";
     document.getElementById('shw-msgt3').style.visibility="visible";
+    document.getElementById('colorname3').style.display="block";
 }
 function showans4()
 {
     document.getElementById('shw-msgr4').style.visibility="visible";
     document.getElementById('shw-msgu4').style.visibility="visible";
     document.getElementById('shw-msgt4').style.visibility="visible";
+    document.getElementById('colorname4').style.display="block";
 }
 function showans5()
 {
     document.getElementById('shw-msgr5').style.visibility="visible";
     document.getElementById('shw-msgu5').style.visibility="visible";
     document.getElementById('shw-msgt5').style.visibility="visible";
+    document.getElementById('colorname5').style.display="block";
 }
 
 function showans6()
@@ -436,5 +468,6 @@ function showans6()
     document.getElementById('shw-msgr6').style.visibility="visible";
     document.getElementById('shw-msgu6').style.visibility="visible";
     document.getElementById('shw-msgt6').style.visibility="visible";
+    document.getElementById('colorname6').style.display="block";
 }
 //};*/
