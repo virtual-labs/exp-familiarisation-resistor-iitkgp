@@ -1,0 +1,42 @@
+{
+    "version": 2.0,
+    "questions": [
+      {
+        "question":"What is the multiplier of orange color code  registor?" ,
+        "answers": {
+          "a": "1 KOhm",
+          "b": "10 Ohm",
+          "c": "10 KOhm",
+          "d": "1 GOhm"
+        },
+        
+        "correctAnswer": "a",
+        "difficulty": "beginner"
+      },
+      {
+        "question": "What is the multiplier of blue color code  registor?",
+        "answers": {
+            "a": "1 KOhm",
+            "b": "10 Ohm",
+            "c": "1 MOhm",
+            "d": "1 GOhm"
+        },
+       
+        "correctAnswer": "c",
+        "difficulty": "beginner"
+      },
+      {
+        "question": "What is the tolerance of gold color code  registor?",
+        "answers": {
+            "a": "2",
+            "b": "5",
+            "c": "1",
+            "d": "0"
+        },
+        
+        "correctAnswer": "b",
+        "difficulty": "beginner"
+      }
+    ]
+  }
+  

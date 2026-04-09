@@ -1,0 +1,17 @@
+
+/home/runner/work/exp-familiarisation-resistor-iitkgp/exp-familiarisation-resistor-iitkgp/experiment/simulation/js/resis.js
+   11:10  warning  'resfn' is defined but never used     no-unused-vars
+   97:10  warning  'resfnn' is defined but never used    no-unused-vars
+  158:10  warning  'resfun' is defined but never used    no-unused-vars
+  218:10  warning  'resfunc' is defined but never used   no-unused-vars
+  307:10  warning  'resfunct' is defined but never used  no-unused-vars
+  367:10  warning  'resfunt' is defined but never used   no-unused-vars
+  429:10  warning  'showans1' is defined but never used  no-unused-vars
+  437:10  warning  'showans2' is defined but never used  no-unused-vars
+  444:10  warning  'showans3' is defined but never used  no-unused-vars
+  451:10  warning  'showans4' is defined but never used  no-unused-vars
+  458:10  warning  'showans5' is defined but never used  no-unused-vars
+  466:10  warning  'showans6' is defined but never used  no-unused-vars
+
+✖ 12 problems (0 errors, 12 warnings)
+
